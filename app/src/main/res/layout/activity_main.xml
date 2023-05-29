@@ -4,35 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/whitebackground"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:background="@color/whitebackground"
+        android:gravity="center"
+        >
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="40pt"
-            android:layout_height="40pt" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="40pt"
-            android:layout_height="40pt"
-            android:layout_marginLeft="3pt" />
-
-        <Button
-            android:id="@+id/button"
+            android:id="@+id/bu1"
             android:layout_width="40pt"
             android:layout_height="40pt"
-            android:layout_marginLeft="3pt" />
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
     </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:background="@color/whitebackground"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/bu4"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu5"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu6"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+    </TableRow>
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3pt"
+        android:background="@color/whitebackground"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/bu7"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu8"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+
+        <Button
+            android:id="@+id/bu9"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_marginLeft="3pt"
+            android:backgroundTint="@color/mywhite"
+            android:onClick="buClick" />
+    </TableRow>
+
 </TableLayout>
