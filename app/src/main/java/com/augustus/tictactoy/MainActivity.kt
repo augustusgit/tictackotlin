@@ -6,6 +6,8 @@ import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import java.util.*
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +49,7 @@ class MainActivity : AppCompatActivity() {
             buSelected.setBackgroundResource(R.color.blue)
             player1.add(cellId)
             activePlayer = 2
+            autoplay()
         }else{
             buSelected.text = "O"
             buSelected.setBackgroundResource(R.color.darkGreen)
@@ -117,6 +120,38 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Player 1 win the game", Toast.LENGTH_LONG).show()
         }else if(winner == 2){
             Toast.makeText(this, "Player 2 win the game", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    fun autoplay(){
+        var emptyCell = ArrayList<Int>()
+
+        for( cellId in 1..9){
+            if (!(player1.contains(cellId) || player2.contains(cellId))){
+                emptyCell.add(cellId)
+            }
+        }
+
+        var r = Random()
+        val randIndex = r.nextInt(emptyCell.size)
+        val cellId = emptyCell[randIndex]
+
+        var buSelected:Button?
+        buSelected = when(cellId){
+            1 -> findViewById(R.id.bu1)
+            2 -> findViewById(R.id.bu2)
+            3 -> findViewById(R.id.bu3)
+            4 -> findViewById(R.id.bu4)
+            5 -> findViewById(R.id.bu5)
+            6 -> findViewById(R.id.bu6)
+            7 -> findViewById(R.id.bu7)
+            8 -> findViewById(R.id.bu8)
+            9 -> findViewById(R.id.bu9)
+            else -> {findViewById(R.id.bu1)}
+        }
+
+        if (buSelected != null) {
+            playGame(cellId, buSelected)
         }
     }
 }
